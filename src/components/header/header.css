@@ -66,8 +66,13 @@ header {
     border: blue 5px;
 }
 
+.socialcontainer {
+    position: relative;
+    margin: -1% auto auto auto;
+}
+
 .socialicon {
-    width: 2%;
+    width: 1.85%;
     padding: 0.5%;
 }
 

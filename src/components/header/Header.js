@@ -1,8 +1,8 @@
 import bandname from '../../assets/no-edits-name.png'
-import albumname from '../../assets/album-name.png'
+import HeaderSocials from './HeaderSocials';
+import NavBar from '../navbar/Navbar';
 import './header.css';
 import '../../App.css';
-import HeaderSocials from './HeaderSocials';
 
 const Header = (props) => {
     return (
@@ -11,9 +11,7 @@ const Header = (props) => {
                 <div>
                     <img src={bandname} className="bandname" alt="band-name"/>
                 </div>
-                <div>
-                <img src={albumname} className="albumname" alt="album-name"/>
-                </div>
+                <NavBar/>
                 <HeaderSocials/>
             </div>
         </header>

@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color:#515149;
+  background-color:#474f44;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,5 +39,9 @@
 
 a:link {
   text-decoration: none;
+  color: white;
+}
+
+a:visited {
   color: white;
 }

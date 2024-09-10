@@ -10,7 +10,7 @@ import betterdays from '../../assets/bdwhy-astro-filled.png'
 
 const HeaderSocials = () => {
   return (
-    <div>
+    <div className="socialcontainer">
         <a href="https://noeditsband.bandcamp.com/album/we-all-end-up-the-same" target="_blank" rel="noopener noreferrer">
             <img src={bandcamp} alt="bandcamp" className='socialicon'/>
         </a>
