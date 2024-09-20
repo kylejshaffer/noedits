@@ -1,14 +1,20 @@
+import { ChakraProvider, VStack } from '@chakra-ui/react'
 import Header from './components/header/Header';
 import Body from './components/Body';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 
 function App() {
+  const style = {
+    "background-color": "rgba(0, 0, 0, 0.64)",
+  }
   return (
-    <div className='App-header'>
-      <Header headerstyle="App-header"/>
-      <Body/>
-    </div>
+    <ChakraProvider>
+      <main style={style}>
+        <VStack>
+          <Header/>
+          <Body/>
+        </VStack>
+      </main>
+    </ChakraProvider>
   );
 }
 

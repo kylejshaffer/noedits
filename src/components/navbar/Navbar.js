@@ -1,3 +1,4 @@
+import { HStack, Text } from '@chakra-ui/react';
 import './navbar.css'
 
 const navItems = [
@@ -10,19 +11,15 @@ const navItems = [
 
 const NavBar = () => {
     return (
-        <nav className="navbar">
-            <div className='nav-container'>
-                <ul className="nav-menu">
-                {navItems.map((item) => {
-                    return (
-                    <li key={item.id} className='nav-item'>
-                        <a href={item.path}>{item.title}</a>
-                    </li>
-                    )
-                })}
-                </ul>
-            </div>
-        </nav>
+        <HStack align='center' spacing={6}>
+            {navItems.map((n) => {
+                return (
+                    <a href={n.path}>
+                        <Text fontSize='lg' color='white'>{n.title}</Text>
+                    </a>
+                )
+            })}
+        </HStack>
     )
 }
 

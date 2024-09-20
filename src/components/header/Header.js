@@ -1,20 +1,15 @@
 import bandname from '../../assets/no-edits-name.png'
 import HeaderSocials from './HeaderSocials';
 import NavBar from '../navbar/Navbar';
-import './header.css';
-import '../../App.css';
+import { VStack, Image } from '@chakra-ui/react';
 
 const Header = (props) => {
     return (
-        <header className={props.headerstyle}>
-            <div className="container header__container">
-                <div>
-                    <img src={bandname} className="bandname" alt="band-name"/>
-                </div>
-                <NavBar/>
-                <HeaderSocials/>
-            </div>
-        </header>
+        <VStack>
+            <Image src={bandname} boxSize="30%"></Image>
+            <NavBar/>
+            <HeaderSocials/>
+        </VStack>
     );    
 }
 
