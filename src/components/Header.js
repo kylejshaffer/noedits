@@ -1,12 +1,12 @@
 import bandname from '../assets/no-edits-name.png'
-import { Box, VStack, HStack, Image, Text } from '@chakra-ui/react';
+import { Box, VStack, HStack, Image } from '@chakra-ui/react';
+import '../index.css';
 
 const navItems = [
     {id: 0, title: "Home", path: "./"},
     {id: 1, title: "Press", path: "press"},
     {id: 2, title: "Live", path: "live"},
     {id: 3, title: "About", path: "about"},
-    {id: 4, title: "Contact", path: "mailto: noeditsband@gmail.com"}
 ]
 
 const NavBar = () => {
@@ -24,11 +24,16 @@ const NavBar = () => {
       };
     
     return (
-        <HStack align='center' spacing={6}>
+        <HStack
+        align='center'
+        spacing={6}
+        >
             {navItems.map((n) => {
                 return (
-                    <a href={"#" + n.path} onClick={handleClick(String(n.path))}>
-                        <Text fontSize='lg' color='white'>{n.title}</Text>
+                    <a href={"#" + n.path}
+                     className="navLink"
+                     onClick={handleClick(String(n.path))}>
+                    <p>{n.title}</p>
                     </a>
                 )
             })}
@@ -40,7 +45,6 @@ const NavBar = () => {
 const Header = (props) => {
     return (
         <Box
-        //position="fixed"
         width="100%"
         top={0}
         left={0}

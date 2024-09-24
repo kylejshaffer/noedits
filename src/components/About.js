@@ -1,4 +1,5 @@
-import { Divider, Heading, Text, VStack } from '@chakra-ui/react';
+import bandphoto from '../assets/no-edits.JPG'
+import { Divider, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import FullScreenSection from './FullScreenSection';
 
 const About = () => {
@@ -10,8 +11,9 @@ const About = () => {
         spacing={8}
         >
         <VStack alignItems='left' marginLeft='20%' marginRight='20%'>
-            <Heading id="about-section">About</Heading>
-            <Divider />
+            <Image src={bandphoto} id="about-section"></Image>
+            <Heading>About</Heading>
+            <Divider/>
             <Text>
             Newly rechristened Seattle three-piece No Edits are a group who both wear their influences proudly on their sleeve and feel no particular allegiance to them. Formerly known as Fixtures, No Edits play an angular, idiosyncratic form of melodic post-hardcore that fans of the late 90s Dischord and Jade Tree catalogs will find immediately familiar. But even though the DNA of greats like Burning Airlines and These Arms Are Snakes is clearly detectable in the band’s mathy yet tuneful approach, No Edits is uninterested in nostalgia.
 <br/><br/>

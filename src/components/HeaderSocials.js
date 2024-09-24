@@ -23,6 +23,9 @@ const HeaderSocials = () => {
         <a href="https://betterdayswillhauntyou.com/" target="_blank" rel="noopener noreferrer">
             <Image src={betterdays} boxSize="35px" alt="better-days-will-haunt-you" className='socialicon'/>
         </a>
+        <a href="mailto: noeditsband@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Image src={betterdays} boxSize="35px" alt="email" className='socialicon'/>
+        </a>
     </VStack>
   )
 }
