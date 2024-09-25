@@ -3,10 +3,10 @@ import { Box, VStack, HStack, Image } from '@chakra-ui/react';
 import '../index.css';
 
 const navItems = [
-    {id: 0, title: "Home", path: "./"},
-    {id: 1, title: "Press", path: "press"},
-    {id: 2, title: "Live", path: "live"},
-    {id: 3, title: "About", path: "about"},
+    {id: 0, title: "HOME", path: "./"},
+    {id: 1, title: "PRESS", path: "press"},
+    {id: 2, title: "LIVE", path: "live"},
+    {id: 3, title: "ABOUT", path: "about"},
 ]
 
 const NavBar = () => {
@@ -42,7 +42,7 @@ const NavBar = () => {
     )
 }
 
-const Header = (props) => {
+const Header = () => {
     return (
         <Box
         width="100%"

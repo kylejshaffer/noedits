@@ -1,5 +1,6 @@
 import { ChakraProvider, VStack } from '@chakra-ui/react'
 import Header from './components/Header';
+import Socials from './components/SocialsSidebar';
 import Body from './components/Body';
 import Live from './components/Live';
 import Press from './components/Press';
@@ -10,7 +11,8 @@ function App() {
   return (
     <ChakraProvider>
       <main>
-      <VStack spacing={6}>
+      <Socials/>
+      <VStack>
         <Header/>
         <Body/>
         <Press/>

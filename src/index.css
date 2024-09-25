@@ -1,5 +1,30 @@
+@import url("https://use.typekit.net/pvo5zvb.css");
+
 main {
   background-color:#3c3c3c;
+}
+
+.customHeader {
+  font-family: "bebas-neue", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: larger;
+}
+
+.sidebar {
+  position: sticky;
+  top: 20%;
+  float: right;
+  margin-left: 0;
+  margin-top: 20%;
+  margin-right: 5%;
+}
+
+p {
+  font-family: "ballinger", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: large;
 }
 
 h1, h2, h3, p, td {

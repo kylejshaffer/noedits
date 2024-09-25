@@ -1,7 +1,7 @@
 import { Button, Image, VStack } from '@chakra-ui/react';
 import FullScreenSection from './FullScreenSection';
 import albumname from '../assets/album-name-out-now.png'
-import lp from '../assets/no-edits-vinyl-mock.png'
+import lp from '../assets/vinyl.png'
 
 const Body = () => {
     return (

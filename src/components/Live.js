@@ -4,7 +4,7 @@ const Live = () => {
     return (
         <VStack width="100%">
             <TableContainer>
-                <Heading id="live-section">Live Dates</Heading>
+                <Heading id="live-section" className="customHeader">Live Dates</Heading>
                 <Divider />
                 <Table size='lg' variant='unstyled'>
                 <Tbody>
