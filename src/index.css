@@ -11,6 +11,15 @@ main {
   font-size: larger;
 }
 
+.pressImage {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.pressImage:hover {
+  opacity: 0.6;
+}
+
 .sidebar {
   position: sticky;
   top: 20%;

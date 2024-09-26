@@ -10,10 +10,11 @@ const navItems = [
 ]
 
 const NavBar = () => {
-    const handleClick = (anchor) => () => {
+    const handleClick = (e) => {
+        e.stopPropagation();
+        e.nativeEvent.stopImmediatePropagation();
+        const anchor = e.nativeEvent.srcElement.parentElement.href.split("/").at(-1).replace("#", "");
         const id = `${anchor}-section`;
-        console.log("From handleClick:");
-        console.log(id);
         const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView({
@@ -32,7 +33,9 @@ const NavBar = () => {
                 return (
                     <a href={"#" + n.path}
                      className="navLink"
-                     onClick={handleClick(String(n.path))}>
+                     key={n.id}
+                     /* onClick={handleClick(String(n.path))}> */
+                     onClick={handleClick}>
                     <p>{n.title}</p>
                     </a>
                 )
