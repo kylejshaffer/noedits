@@ -16,7 +16,7 @@ const Press = () => {
         <VStack alignItems='left'>
              <Heading id="press-section" className="customHeader">Press</Heading>
              <Divider />
-                <SimpleGrid columns={2} spacing={10}>
+                <SimpleGrid columns={[1, null, 2]} spacing={10}>
                     <Card maxW='lg'>
                         <CardBody>
                             <Stack mt='6' spacing='3'>

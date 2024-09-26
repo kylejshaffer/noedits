@@ -5,6 +5,7 @@ import Body from './components/Body';
 import Live from './components/Live';
 import Press from './components/Press';
 import About from './components/About';
+import MobileMenu from './components/MobileMenu';
 
 
 function App() {

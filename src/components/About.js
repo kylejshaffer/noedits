@@ -1,16 +1,9 @@
 import bandphoto from '../assets/no-edits.JPG'
 import { Divider, Heading, Image, Text, VStack } from '@chakra-ui/react';
-import FullScreenSection from './FullScreenSection';
 
 const About = () => {
     return (
-        <FullScreenSection
-        isDarkBackground
-        p={8}
-        alignItems="flex-start"
-        spacing={8}
-        >
-        <VStack alignItems='left' marginLeft='20%' marginRight='20%'>
+        <VStack alignItems='left' marginLeft={{base: '10%', md: '25%', lg: '20%'}} marginRight={{base: '10%', md: '25%', lg: '20%'}}>
             <Image src={bandphoto} id="about-section"></Image>
             <Heading className="customHeader">About</Heading>
             <Divider/>
@@ -22,7 +15,6 @@ On their debut LP for Better Days Will Haunt You, We All End Up The Same, No Edi
 Like Chavez, Jawbox, or Fugazi before them, No Edits aren’t content to color inside the lines. We All End Up The Same is the satisfying result of that pioneering spirit, dually challenging and catchy, with each subsequent listen revealing another layer of the record’s multifaceted construction. Best played loud for maximum effect.
             </Text>
         </VStack>
-        </FullScreenSection>
     );
 }
 

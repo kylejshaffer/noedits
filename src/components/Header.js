@@ -34,7 +34,6 @@ const NavBar = () => {
                     <a href={"#" + n.path}
                      className="navLink"
                      key={n.id}
-                     /* onClick={handleClick(String(n.path))}> */
                      onClick={handleClick}>
                     <p>{n.title}</p>
                     </a>
