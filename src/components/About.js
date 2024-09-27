@@ -3,7 +3,10 @@ import { Divider, Heading, Image, Text, VStack } from '@chakra-ui/react';
 
 const About = () => {
     return (
-        <VStack alignItems='left' marginLeft={{base: '10%', md: '25%', lg: '20%'}} marginRight={{base: '10%', md: '25%', lg: '20%'}}>
+        <VStack alignItems='left'
+         marginLeft={{base: '10%', md: '25%', lg: '20%'}}
+         marginRight={{base: '10%', md: '25%', lg: '20%'}}
+         marginBottom={{base: '10%', md: '25%', lg: '20%'}}>
             <Image src={bandphoto} id="about-section"></Image>
             <Heading className="customHeader">About</Heading>
             <Divider/>

@@ -1,48 +1,46 @@
-import bandcamp from '../assets/Bandcamp_logo.png'
-import applemusic from '../assets/Apple_Music_logo.png'
-import instagram from '../assets/Instagram_logo.png'
-import spotify from '../assets/Spotify_Primary_Logo_RGB_White.png'
-import betterdays from '../assets/bdwhy-astro-filled.png'
-import { IconButton, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { useDisclosure } from '@chakra-ui/react'
+import { Drawer, DrawerOverlay, DrawerContent, DrawerBody, IconButton } from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
 
 const MobileMenu = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure()
     return (
-        /* <Menu>
-            <MenuButton
-                as={IconButton}
-                aria-label='Options'
-                icon={<HamburgerIcon/>}
-                variant='outline'
-            />
-            <MenuList>
-                <MenuItem icon={bandcamp} command='⌘T'>
-                Bandcamp
-                </MenuItem>
-                <MenuItem icon={applemusic} command='⌘N'>
-                Apple Music
-                </MenuItem>
-                <MenuItem icon={spotify} command='⌘⇧N'>
-                Spotify
-                </MenuItem>
-                <MenuItem icon={instagram} command='⌘O'>
-                Instagram
-                </MenuItem>
-                <MenuItem icon={betterdays} command='⌘O'>
-                Better Days
-                </MenuItem>
-            </MenuList>
-        </Menu> */
-        <Menu>
-            <MenuButton
-             as={IconButton}
-             aria-label='Options'
-             icon={<HamburgerIcon/>}
-            />
-            <MenuList>
-                <MenuItem>Bandcamp</MenuItem>
-            </MenuList>
-        </Menu>
+       <>
+        <IconButton icon={<HamburgerIcon/>} variant='outline' color='white' onClick={onOpen}>
+            Open
+        </IconButton>
+        <Drawer placement='left' onClose={onClose} isOpen={isOpen} color='black'>
+            <DrawerOverlay />
+            <DrawerContent>
+            <DrawerBody>
+                <p className='drawerText'>
+                    <a href="https://noeditsband.bandcamp.com/album/we-all-end-up-the-same" target="_blank" rel="noopener noreferrer">
+                    Bandcamp
+                    </a>
+                </p>
+                <p className='drawerText'>
+                    <a href="https://geo.music.apple.com/us/album/_/1762195645?app=music&at=1000lHKX&ct=linktree_http&itscg=30200&itsct=lt_m&ls=1&mt=1" target="_blank" rel="noopener noreferrer">
+                    Apple Music
+                    </a>
+                </p>
+                <p className='drawerText'>
+                    <a href="https://open.spotify.com/album/4OYS7mFnw5RanTyY8ZVoIR?utm_medium=share&utm_source=linktree" target="_blank" rel="noopener noreferrer">
+                    Spotify
+                    </a>
+                </p>
+                <p className='drawerText'>
+                    <a href="https://instagram.com/noeditsband" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                    </a>
+                </p>
+                <p className='drawerText'>
+                    <a href="https://betterdayswillhauntyou.com/" target="_blank" rel="noopener noreferrer">
+                    Better Days</a>
+                </p>
+            </DrawerBody>
+            </DrawerContent>
+        </Drawer>
+       </>
     )
 }
 

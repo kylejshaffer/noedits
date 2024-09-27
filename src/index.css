@@ -11,6 +11,10 @@ main {
   font-size: larger;
 }
 
+.drawerText {
+  color: #3c3c3c;
+}
+
 .pressImage {
   opacity: 1;
   transition: opacity 0.3s;
